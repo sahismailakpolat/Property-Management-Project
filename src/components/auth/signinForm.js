@@ -10,7 +10,24 @@ class SigninForm extends Component {
         return (
             <form className='sign-in-form'>
                 <FormTitle className="sign-in__title" text='Login' />
-                <Field className='sign-in-form__email' component={FormInput} name='email' type='email' />
+                <Field
+                    className='sign-in-form__email'
+                    placeholder='Enter an Email'
+                    name='Email'
+                    type='email'
+                    title='Email'
+                    component={FormInput}
+
+                />
+                <Field
+                    className='sign-in-form__password'
+                    placeholder='Enter an Password'
+                    name='Password'
+                    type='password'
+                    title='Password'
+                    component={FormInput}
+
+                />
             </form>
         )
 
