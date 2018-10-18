@@ -1,6 +1,6 @@
 import axios from 'axios';
-import { ROOT_URL } from '../config';
 
+import { ROOT_URL } from '../config';
 
 export function signUp(fields, success) {
     console.log(fields);
@@ -14,4 +14,4 @@ export function signUp(fields, success) {
                 if (err) { console.log(err) }
             })
     }
-} 
+}

@@ -4,8 +4,6 @@ import * as actions from '../../actions';
 
 import SignupForm from './signupForm';
 
-
-
 class Signup extends Component {
 
     onSubmit = (fields) => {
@@ -23,6 +21,5 @@ class Signup extends Component {
         )
     }
 }
-
 
 export default connect(null, actions)(Signup);
