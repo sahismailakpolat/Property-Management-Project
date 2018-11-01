@@ -1,14 +1,20 @@
 import {
-    STORE_USER
+    AUTHENTICATE_USER
 } from '../actions/types';
 
-export default function (state = [], action) {
+const INITIAL_STATE = {
+    authenticated: false,
+    user: []
+
+}
+
+export default function (state = INITIAL_STATE, action) {
     switch (action.type) {
-        case STORE_USER:
-            console.log(action.payload);
+        case AUTHENTICATE_USER:
+            const { user } = action.payload;
             return {
                 ...state,
-                user: action.payload
+                user
             }
         default: return state;
     }
