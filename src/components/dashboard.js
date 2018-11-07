@@ -15,7 +15,7 @@ class Dashboard extends Component {
                     component: <h4>Hey There - Newsletter</h4>
                 },
                 {
-                    title: 'Newsletter',
+                    title: 'Requests',
                     active: false,
                     component: <h4>Hey There - Newsletter</h4>
                 },
