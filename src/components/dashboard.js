@@ -23,11 +23,14 @@ class Dashboard extends Component {
         }
     }
 
+    handleTabChange = (title) => {
+        console.log('clicked on tab', title);
+    }
 
     render() {
         return (
             <div className='dashboard'>
-                <TabNav tabs={this.state.tabs} />
+                <TabNav handleClick={(title) => this.handleTabChange(title)} tabs={this.state.tabs} />
             </div>
         )
 
