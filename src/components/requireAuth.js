@@ -14,7 +14,6 @@ export default function (ComposedComponent) {
             if (!nextProps.authenticated) {
                 history.push('/');
             }
-
         }
         render() {
             return <ComposedComponent />

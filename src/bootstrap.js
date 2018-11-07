@@ -3,18 +3,15 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, compose } from 'redux';
 import { Router, Route, Switch } from 'react-router-dom';
-import App from './components/app';
 import reduxThunk from 'redux-thunk';
 import reducers from './reducers';
 
 const createStoreWithMiddleware = applyMiddleware(reduxThunk)(compose((window.devToolsExtension ? window.devToolsExtension() : f => f)(createStore)));
 
-
-//import 'bootstrap/dist/css/bootstrap.css';
+// import 'bootstrap/dist/css/bootstrap.css';
 import './style/main.scss';
 
 import Layout from './components/layout';
-
 
 import Signup from './components/auth/signup';
 import Signin from './components/auth/signin';
@@ -26,7 +23,7 @@ class Dashboard extends Component {
   render() {
     return (
       <div>
-        Hey ahali!
+        hey there
     </div>
     )
   }
@@ -43,7 +40,6 @@ function main() {
             <Route path='/signup' component={Signup} />
 
             <Route path='/dashboard' component={requireAuth(Dashboard)} />
-
           </Layout>
         </Switch>
       </Router>

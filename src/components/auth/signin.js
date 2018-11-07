@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 
 import * as actions from '../../actions';
 
-
 import SigninForm from './signinForm';
 
 class Signin extends Component {
@@ -22,6 +21,5 @@ class Signin extends Component {
         )
     }
 }
-
 
 export default connect(null, actions)(Signin);
