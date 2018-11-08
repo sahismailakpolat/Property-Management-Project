@@ -1,4 +1,6 @@
 .newsletter-archive {
+    margin-top: 3.85rem;
+
     grid-row: archive-s/archive-e;
     grid-column: archive-s/archive-e;
 
@@ -15,9 +17,6 @@
         padding-bottom: .4rem;
     }
 
-    &__items {
-
-    }
 
 }
 
@@ -28,9 +27,7 @@
     grid-template-rows: repeat(auto-fill, 1fr);
 
     align-content: start;
-    &__item {
-
-    }
+   
 }
 
 .archive-item {
