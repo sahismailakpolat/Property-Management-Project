@@ -38,4 +38,10 @@
             font-size: 1.6rem;
         }
     }
+    &__button {
+        grid-row: s/m;
+        grid-column: s/e;
+        justify-self: end;
+        align-self: end;
+    }
 }
