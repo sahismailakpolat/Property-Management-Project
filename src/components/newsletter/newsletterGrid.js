@@ -13,27 +13,18 @@ class NewsletterGrid extends Component {
     }
 
     componentDidMount() {
-        this.props.fetchNewsletters();
+        setTimeout(() => {
+            this.props.fetchNewsletters();
+        }, 1000);
     }
 
     render() {
-
-        const latest = {
-            _id: '1993',
-            title: 'Happy Holiday Fam',
-            body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-            date: new Date(),
-            imageUrl: 'http://via.placeholder.com/960x258'
-        }
-
-
-
         return (
             <div className='newsletter-grid'>
                 <Button className='newsletter-grid__button' icon='fas fa-plus' callback={() => this.handleAddNewsletter()} />
-                <NewsletterBox date={new Date()} />
+                <NewsletterBox />
                 <NewsletterArchive />
-                <NewsletterLatest history={this.props.history} {...latest} />
+                <NewsletterLatest history={this.props.history} />
             </div>
         )
     }
