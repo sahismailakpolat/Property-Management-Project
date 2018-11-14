@@ -16,6 +16,10 @@ class EditNewsletter extends Component {
         this.props.history.push('/dashboard')
 
         //console.log('trying to cancel');
+    };
+
+    componentDidMount() {
+        console.log(this.props.match.params.id);
     }
 
     render() {

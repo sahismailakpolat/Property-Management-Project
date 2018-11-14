@@ -10,6 +10,8 @@ class NewsletterLatest extends Component {
         this.props.history.push(`/newsletter/edit/${this.props._id}`);
     }
 
+
+
     render() {
         const { title, imageUrl, body } = this.props;
         return (
