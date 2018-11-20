@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import Icon from '../icon';
 
 
 class RequestsItem extends Component {
@@ -9,7 +10,7 @@ class RequestsItem extends Component {
     render() {
         return (
             <div className='requests-item'>
-                item goes here
+                <Icon icon='fas fa-exclamation-triangle' />
             </div>
         )
     }
