@@ -6,8 +6,8 @@ class RequestsBoxes extends Component {
         return (
             <div className='requests-boxes'>
                 <RequestsBox title={'pending'} count={2} />
-                <RequestsBox title={'pending'} count={1} />
-                <RequestsBox title={'pending'} count={5} />
+                <RequestsBox title={'in-progress'} count={1} />
+                <RequestsBox title={'complete'} count={5} />
 
 
             </div>
