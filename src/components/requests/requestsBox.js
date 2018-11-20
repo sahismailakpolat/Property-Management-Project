@@ -6,7 +6,7 @@ class RequestsBox extends Component {
     render() {
         const { count, title } = this.props;
         return (
-            <a onClick={() => console.log('trying select this box')} className='requests-box requests-box-active'>
+            <a onClick={(title) => this.props.changeSlectedRequestType(title)} className='requests-box requests-box-active'>
                 <div className='requests-box__count'>{count}</div>
                 <div className='requests-box__title'>{title}</div>
                 <div className='requests-box__point'></div>
