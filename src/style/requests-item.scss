@@ -9,7 +9,6 @@
         grid-column: icon-s/icon-e;
         grid-row: s/e;
         justify-self: center;
-        background-color: cornflowerblue;
     }
     &__title {
         grid-column: title-s/title-e;
@@ -33,16 +32,52 @@
         grid-row: s/e;
         display: none;
     }
-    &__description {
+    &__description
+     {
+        display: grid;
         grid-column: s/e;
         grid-row: description-s/description-e;
         
-        display: grid;
         grid-column-gap: 4rem;
         grid-auto-flow: column;
+        align-self: left;
+    }
+   
+ } 
+
+
+ .requests-item {
+    &__icon {
+       font-size: 3rem;
+    }
+    &__title {
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 2.3rem;
+    }
+    &__tenant-unit {
+        color: $color-red-BA;
+        font-family: $font-encode-cond;
+        font-size: 1.3rem;
+        line-height: 1.6rem;
+    }
+    &__arrow {
+        color: $color-red-BA;
+        font-size: 3rem;
+    }
+    &__date {
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+    }
+    &__move {
+        
+    }
+    &__description {
+        
     }
     &__description-img {
-        
+        font-size: 1.4rem;
+        line-height: 1.7rem;
     }
     &__description-text {
      }

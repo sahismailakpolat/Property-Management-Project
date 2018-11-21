@@ -20,7 +20,7 @@ class RequestsItem extends Component {
                     09/15/97
                 </div>
                 <Button className='requests-icon__move' icon='fas fa-wrench' callback={() => console.log('tryna change request status.')} />
-                <div className='requests-item__description-img'>
+                <div className='requests-item__description'>
                     <img
                         className='requests-item__description-img'
                         src='http://via.placeholder.com/160x94'
