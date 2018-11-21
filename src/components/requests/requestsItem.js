@@ -23,7 +23,7 @@ class RequestsItem extends Component {
                 <div className='requests-item__description-img'>
                     <img
                         className='requests-item__description-img'
-                        src='http://via.placeholder.com/160*94'
+                        src='http://via.placeholder.com/160x94'
                     />
                     <p className='requests-item__description-text'>
                         Lorem Ipsum/////////////////////////
