@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import RequestsBox from './requestsBox';
 
+import { connect } from 'react-redux';
+
+
 class RequestsBoxes extends Component {
     render() {
         return (
@@ -38,3 +41,5 @@ function mapStateToProps(state) {
 }
 
 RequestsBoxes = connect(mapStateToProps)(RequestsBoxes);
+
+export default RequestsBoxes;
