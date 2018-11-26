@@ -2,6 +2,11 @@
     grid-row: s/e;
     grid-column: requests-s/requests-e;
     align-self: start;
+
     display: grid;
     grid-row-gap: 2rem;
+
+    border: 1px solid $color-gray-E6;
+    border-radius: 0.5rem;
+
 }
