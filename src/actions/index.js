@@ -9,7 +9,8 @@ import {
 } from './newsletter';
 
 import {
-    changeSelectedRequestType
+    changeSelectedRequestType,
+    createNewRequest
 } from './requests';
 
 export {
@@ -17,6 +18,7 @@ export {
     signIn,
     fetchNewsletters,
     fetchNewsletterWithId,
-    changeSelectedRequestType
+    changeSelectedRequestType,
+    createNewRequest
 
 }; 
