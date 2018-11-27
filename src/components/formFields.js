@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 
 export class FormInput extends Component {
     render() {
-        const { className, title, input, type, placeholder, editValue } = this.props;
+        const { className, title, input, type, placeholder } = this.props;
         return (
             <div className={`${className} form-input`}>
                 <label className='form-input__title'>{title}</label>
@@ -13,7 +13,6 @@ export class FormInput extends Component {
                     type={type}
                     {...input}
                     placeholder={placeholder}
-                    value={editValue ? editValue : input.value}
                 />
             </div>
         )
@@ -23,7 +22,7 @@ export class FormInput extends Component {
 
 export class FormTextArea extends Component {
     render() {
-        const { className, title, input, type, placeholder, editValue } = this.props;
+        const { className, title, input, type, placeholder } = this.props;
         return (
             <div className={`${className} form-textarea`}>
                 <label className='form-textarea__title'>{title}</label>
@@ -32,7 +31,6 @@ export class FormTextArea extends Component {
                     type={type}
                     {...input}
                     placeholder={placeholder}
-                    value={editValue ? editValue : input.value}
 
                 ></textarea>
             </div>
@@ -74,14 +72,13 @@ export class FormImage extends Component {
     }
 
     render() {
-        const { className, title, input, imageUrl } = this.props;
+        const { className, title, input } = this.props;
         return (
             <div className={`${className} form-image`}>
                 <label className='form-image__title'>{title}</label>
                 <img
                     id='newsletter-new-image'
                     className='form-image__image'
-                    src={imageUrl}
                 />
                 <input
                     className='form-image__replace'
