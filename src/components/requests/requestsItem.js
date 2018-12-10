@@ -79,10 +79,10 @@ class RequestsItem extends Component {
                         <div className='item-description'>
 
                             <img
-                                className='item-descrption__img'
+                                className='item-description__img'
                                 src={`${ROOT_URL}/${imageUrl}`}
                             />
-                            <p className='item-descrption__text'>
+                            <p className='item-description__text'>
                                 {body}
                             </p>
                         </div>
