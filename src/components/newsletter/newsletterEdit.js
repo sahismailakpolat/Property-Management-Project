@@ -5,16 +5,25 @@ import * as actions from '../../actions';
 import EditNewsletterForm from './newsletterEditForm';
 class EditNewsletter extends Component {
 
-    onSubmit = (fields) => {
-        // if (button == 'submit') {
-        //console.log('trying to submit to backend');
+    onSubmit = fields => {
 
-        // }
-        this.props.history.push('/dashboard')
-    }
+        const { title, body, image } = fields;
+
+        var formData = new FormData();
+        formData.append('title', title);
+        formData.append('body', body);
+        if (image != undefined) {
+            formData.append('image', image);
+        }
+
+
+        this.props.editNewsletter(formData, () => {
+            this.props.history.push("/dashboard");
+        })
+    };
 
     onCancel = () => {
-        this.props.history.push('/dashboard')
+        this.props.history.push("/dashboard");
 
         //console.log('trying to cancel');
     };

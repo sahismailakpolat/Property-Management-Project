@@ -19,13 +19,12 @@ class NewNewsletter extends Component {
         this.props.createNewNewsletter(formData, () => {
             this.props.history.push("/dashboard");
         })
-    }
+    };
 
     onCancel = () => {
         this.props.history.push('/dashboard')
 
-        //console.log('trying to cancel');
-    }
+    };
 
     render() {
         return (
