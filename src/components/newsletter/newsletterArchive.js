@@ -31,7 +31,7 @@ class NewsletterArchive extends Component {
                 <div className='newsletter-archive__items archive-items'>
                     {
                         this.props.newsletters.map(newsletter => {
-                            return <ArchiveItem callback={(_id) => history.push(`/newsletter/detail/${_id}`)} key={newsletter._id} {...newsletter} />
+                            return <ArchiveItem callback={(_id) => history.push(`/newsletters/detail/${_id}`)} key={newsletter._id} {...newsletter} />
                         })
 
                     }

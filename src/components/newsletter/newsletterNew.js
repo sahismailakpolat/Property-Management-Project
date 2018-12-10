@@ -7,7 +7,7 @@ import NewNewsletterForm from './newsletterNewForm';
 
 class NewNewsletter extends Component {
 
-    onSubmit = (fields) => {
+    onSubmit = fields => {
 
         const { title, body, image } = fields;
 

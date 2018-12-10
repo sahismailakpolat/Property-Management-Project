@@ -34,9 +34,9 @@ class NewsletterGrid extends Component {
 
 function mapStateToProps(state) {
     const { newsletters } = state.newsletters;
-    const latestNewsletter = newsletters[0];
+    const latestNewsletters = newsletters[0];
     return {
-        latestNewsletter
+        latestNewsletters
     }
 }
 export default connect(mapStateToProps, actions)(NewsletterGrid);
