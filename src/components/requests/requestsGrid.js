@@ -5,6 +5,9 @@ import * as actions from '../../actions';
 
 import Button from '../button';
 
+import RequireAdmin from '../auth/requireAdmin';
+
+
 import RequestsBoxes from './requestsBoxes';
 import Requests from './requests';
 
@@ -20,7 +23,9 @@ class RequestsGrid extends Component {
     render() {
         return (
             <div className='requests-grid'>
-                <Button className='requests-grid__button' icon='fas fa-plus' callback={() => this.handleAddRequest()} />
+                <RequireAdmin>
+                    <Button className='requests-grid__button' icon='fas fa-plus' callback={() => this.handleAddRequest()} />
+                </RequireAdmin>
                 <RequestsBoxes />
                 <Requests />
             </div>
